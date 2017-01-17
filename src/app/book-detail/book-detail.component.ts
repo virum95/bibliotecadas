@@ -32,11 +32,18 @@ export class BookDetailComponent implements OnInit {
     }
 
     save(): void {
-    console.log(this.book.description);
       this.bookService.update(this.book)
           .then(() => {
             console.log("Book updated correctly.");
             location.reload();
+      });
+    }
+
+    delete(): void {
+      this.bookService.delete(this.book.title)
+          .then(() => {
+            console.log("Book deleted correctly.");
+            this.goBack();
       });
     }
 

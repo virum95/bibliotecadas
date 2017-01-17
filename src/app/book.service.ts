@@ -54,11 +54,11 @@ export class BookService {
   }
 
   delete(title: string): Promise<void> {
-      const url = `${this.booksUrl+"/books"}/${title}`;
-      return this.http.delete(url, {headers: this.headers})
-          .toPromise()
-          .then(() => null)
-          .catch(this.handleError);
+    const url = `${this.booksUrl+"/books"}/${title}`;
+    return this.http.delete(url, {headers: this.headers})
+      .toPromise()
+      .then(() => null)
+      .catch(this.handleError);
   }
 
   getUserBooks(): Promise<any[]> {

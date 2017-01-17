@@ -127,7 +127,7 @@ router.put('/books/:title', function(req, res, next) {
 /* DELETE a Book */
 router.delete('/books/:title', function(req, res) {
   db.biblioteca.remove({
-    _id: mongojs.ObjectId(req.params.id)
+    "title": req.params.title
   }, '', function(err, result) {
     if (err) {
       res.send(err);

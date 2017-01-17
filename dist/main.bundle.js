@@ -284,11 +284,18 @@ var BookDetailComponent = (function () {
         this.location.back();
     };
     BookDetailComponent.prototype.save = function () {
-        console.log(this.book.description);
         this.bookService.update(this.book)
             .then(function () {
             console.log("Book updated correctly.");
             location.reload();
+        });
+    };
+    BookDetailComponent.prototype.delete = function () {
+        var _this = this;
+        this.bookService.delete(this.book.title)
+            .then(function () {
+            console.log("Book deleted correctly.");
+            _this.goBack();
         });
     };
     BookDetailComponent.prototype.addtoUserLibrary = function () {
@@ -663,7 +670,7 @@ module.exports = "<nav class=\"navbar navbar-default\">\n  <div class=\"containe
 /***/ 669:
 /***/ function(module, exports) {
 
-module.exports = "<div class=\"container\">\n<h4>\n  {{book.title}}\n</h4>\n<h5>\n  {{book.author}}\n</h5>\n  <div>\n    <textarea class=\"form-control\" rows=\"5\" [(ngModel)]=\"book.description\" placeholder=\"Description\"></textarea>\n  </div>\n  <button (click)=\"goBack()\" type=\"button\" class=\"btn btn-default\">Go Back</button>\n  <button (click)=\"save()\" id=\"desc\" type=\"button\" class=\"btn btn-warning\">Update description</button>\n    <button (click)=\"addtoUserLibrary()\" type=\"button\" class=\"btn btn-success\">Add to my library</button>\n</div>\n"
+module.exports = "<div class=\"container\">\n<h4>\n  {{book.title}}\n</h4>\n<h5>\n  {{book.author}}\n</h5>\n  <div>\n    <textarea class=\"form-control\" rows=\"5\" [(ngModel)]=\"book.description\" placeholder=\"Description\"></textarea>\n  </div>\n  <button (click)=\"goBack()\" type=\"button\" class=\"btn btn-default\">Go Back</button>\n  <button (click)=\"delete()\" type=\"button\" class=\"btn btn-danger\">Delete</button>\n  <button (click)=\"save()\" id=\"desc\" type=\"button\" class=\"btn btn-warning\">Update description</button>\n  <button (click)=\"addtoUserLibrary()\" type=\"button\" class=\"btn btn-success\">Add to my library</button>\n</div>\n"
 
 /***/ },
 
