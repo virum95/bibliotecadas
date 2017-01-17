@@ -24,8 +24,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var BookService = (function () {
     function BookService(http) {
         this.http = http;
-        //private booksUrl = 'https://bibliotecadas.herokuapp.com/api';  // URL to web api
-        this.booksUrl = 'https://localhost:3000/api'; // URL to web api
+        this.booksUrl = 'https://bibliotecadas.herokuapp.com/api'; // URL to web api
+        //private booksUrl = 'http://localhost:3000/api';  // URL to web api
         this.headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Headers */]({ 'Content-Type': 'application/json' });
     }
     // Get all the books from the API: PROMISE
