@@ -132,8 +132,11 @@ router.delete('/books/:title', function(req, res) {
     if (err) {
       res.send(err);
     } else {
+      db.libros.remove({
+        "title": req.params.title
+      }, '')};
       res.json(result);
-    }
+    });
   });
 });
 

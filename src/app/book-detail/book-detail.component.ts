@@ -40,7 +40,7 @@ export class BookDetailComponent implements OnInit {
     }
 
     delete(): void {
-      this.bookService.delete(this.book.title)
+      this.bookService.delete(this.book)
           .then(() => {
             console.log("Book deleted correctly.");
             this.goBack();
