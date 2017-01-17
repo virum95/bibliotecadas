@@ -13,7 +13,7 @@ import 'rxjs/add/operator/toPromise';
 var BookService = (function () {
     function BookService(http) {
         this.http = http;
-        this.booksUrl = 'https://bibliotecadas.herokuapp.com/api';
+        this.booksUrl = 'http://localhost:3000/api';
         this.headers = new Headers({ 'Content-Type': 'application/json' });
     }
     BookService.prototype.getAllBooks = function () {

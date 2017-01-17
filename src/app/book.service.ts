@@ -6,7 +6,8 @@ import 'rxjs/add/operator/toPromise';
 @Injectable()
 export class BookService {
 
-  private booksUrl = 'https://bibliotecadas.herokuapp.com/api';  // URL to web api
+  //private booksUrl = 'https://bibliotecadas.herokuapp.com/api';  // URL to web api
+  private booksUrl = 'http://localhost:3000/api';  // URL to web api
   private headers = new Headers({'Content-Type': 'application/json'});
 
   constructor(private http: Http) { }

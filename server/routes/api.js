@@ -17,7 +17,9 @@ router.get('/books', function(req, res, next) {
 
 /* GET All Books */
 router.get('/books/:title', function(req, res, next) {
-  db.biblioteca.find( {title: new RegExp(req.params.title)} , function(err, books) {
+  db.biblioteca.find({
+    title: new RegExp(req.params.title)
+  }, function(err, books) {
     if (err) {
       res.send(err);
     } else {
@@ -47,26 +49,28 @@ router.post('/user', function(req, res, next) {
       "error": "Invalid Data"
     });
   } else {
-    db.libros.find( {"title": book.title } ).limit(1).count( function (err, result) {
+    db.libros.find({
+      "title": book.title
+    }).limit(1).count(function(err, result) {
       if (err) {
         res.status(400);
         res.json({
           "error": "An error ocurred"
         });
-      } else if( result > 0 ){
+      } else if (result > 0) {
         res.status(400);
         res.json({
           "error": "Already owned"
         });
       } else {
-    db.libros.save(book, function(err, result) {
-      if (err) {
-        res.send(err);
-      } else {
-        res.json(result);
+        db.libros.save(book, function(err, result) {
+          if (err) {
+            res.send(err);
+          } else {
+            res.json(result);
+          }
+        })
       }
-    })
-    }
     });
   }
 });
@@ -114,7 +118,11 @@ router.put('/books/:title', function(req, res, next) {
   } else {
     db.biblioteca.update({
       title: req.params.title
-    }, {title: book.title, author: book.author, description: book.description}, {}, function(err, result) {
+    }, {
+      title: book.title,
+      author: book.author,
+      description: book.description
+    }, {}, function(err, result) {
 
       if (err) {
         res.send(err);
@@ -134,9 +142,9 @@ router.delete('/books/:title', function(req, res) {
     } else {
       db.libros.remove({
         "title": req.params.title
-      }, '')};
-      res.json(result);
-    });
+      }, '')
+    };
+    res.json(result)
   });
 });
 
