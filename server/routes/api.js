@@ -1,9 +1,6 @@
 const express = require('express');
 const router = express.Router();
 
-// declare axios for making http requests
-const axios = require('axios');
-
 const mongojs = require('mongojs');
 const db = mongojs('mongodb://das:das2017@ds027505.mlab.com:27505/heroku_5tz53fd8', ['biblioteca', 'libros']);
 
