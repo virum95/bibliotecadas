@@ -1,0 +1,14 @@
+<div class="container">
+<h4>
+  {{book.title}}
+</h4>
+<h5>
+  {{book.author}}
+</h5>
+  <div>
+    <textarea class="form-control" rows="5" [(ngModel)]="book.description" placeholder="Description"></textarea>
+  </div>
+  <button (click)="goBack()" type="button" class="btn btn-default">Go Back</button>
+  <button (click)="save()" id="desc" type="button" class="btn btn-warning">Update description</button>
+    <button (click)="addtoUserLibrary()" type="button" class="btn btn-success">Add to my library</button>
+</div>

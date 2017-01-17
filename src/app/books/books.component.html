@@ -1,0 +1,11 @@
+<div class="main">
+  <div class="container">
+  <li class="row" *ngFor="let book of books" [class.selected]="book=== selectedBook" (click)="onSelect(book)">
+    <h4 class="card-title">{{ book.title }}</h4>
+    <p class="card-text"> by {{book.author}}</p>
+    <div *ngIf="selectedBook===book">
+      <button (click)="gotoDetail()" class="btn btn-info">Book Details</button>
+    </div>
+  </li>
+</div>
+</div>

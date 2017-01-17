@@ -1,0 +1,15 @@
+<div class="container" id="search-component">
+  <h4>Book Search</h4>
+  <div class="col-md-6 ">
+  <input type="text" class="form-control" #searchBox id="search-box" (keyup)="search(searchBox.value)" placeholder="Search for titles.." />
+  <ul id="myUL">
+    <li *ngFor="let book of books | async"
+         (click)="gotoDetail(book)" class="search-result" >
+      {{book.title}}
+    </li>
+  </ul>
+  </div>
+  <div class="col-md-6">
+
+  </div>
+</div>
