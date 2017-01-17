@@ -4,10 +4,11 @@ import { Observable } from 'rxjs';
 
 @Injectable()
 export class BookSearchService {
-    constructor(private http: Http) {}
+
+  constructor(private http: Http) {}
     search(term: string): Observable<any[]> {
         return this.http
-            .get(`http://localhost:3000/api/books/`+term)
+            .get(`https://bibliotecadas.herokuapp.com/api/books/`+term)
             .map((r: Response) => r.json());
     }
 }
