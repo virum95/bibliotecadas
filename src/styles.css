@@ -45,6 +45,6 @@
   to{ bottom:0; opacity:1 }
 }
 
-.container {
-  padding-left: 15%
+li.row {
+  padding-left: 15px;
 }
