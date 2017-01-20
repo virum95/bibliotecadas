@@ -45,4 +45,6 @@
   to{ bottom:0; opacity:1 }
 }
 
-
+.container {
+  padding-left: 15%
+}
