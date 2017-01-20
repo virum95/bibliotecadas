@@ -96,7 +96,7 @@ var BookService = (function () {
     return BookService;
     var _a;
 }());
-//# sourceMappingURL=/home/virum/4/DAS/library2/src/book.service.js.map
+//# sourceMappingURL=/home/virum/4/DAS/library3/bibliotecadas/src/book.service.js.map
 
 /***/ },
 
@@ -133,7 +133,7 @@ if (__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment *
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_core__["a" /* enableProdMode */])();
 }
 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_4__app_app_module__["a" /* AppModule */]);
-//# sourceMappingURL=/home/virum/4/DAS/library2/src/main.js.map
+//# sourceMappingURL=/home/virum/4/DAS/library3/bibliotecadas/src/main.js.map
 
 /***/ },
 
@@ -167,7 +167,7 @@ var AppComponent = (function () {
     ], AppComponent);
     return AppComponent;
 }());
-//# sourceMappingURL=/home/virum/4/DAS/library2/src/app.component.js.map
+//# sourceMappingURL=/home/virum/4/DAS/library3/bibliotecadas/src/app.component.js.map
 
 /***/ },
 
@@ -239,7 +239,7 @@ var AppModule = (function () {
     ], AppModule);
     return AppModule;
 }());
-//# sourceMappingURL=/home/virum/4/DAS/library2/src/app.module.js.map
+//# sourceMappingURL=/home/virum/4/DAS/library3/bibliotecadas/src/app.module.js.map
 
 /***/ },
 
@@ -318,7 +318,7 @@ var BookDetailComponent = (function () {
     return BookDetailComponent;
     var _a, _b, _c;
 }());
-//# sourceMappingURL=/home/virum/4/DAS/library2/src/book-detail.component.js.map
+//# sourceMappingURL=/home/virum/4/DAS/library3/bibliotecadas/src/book-detail.component.js.map
 
 /***/ },
 
@@ -356,7 +356,7 @@ var BookSearchService = (function () {
     return BookSearchService;
     var _a;
 }());
-//# sourceMappingURL=/home/virum/4/DAS/library2/src/book-search.service.js.map
+//# sourceMappingURL=/home/virum/4/DAS/library3/bibliotecadas/src/book-search.service.js.map
 
 /***/ },
 
@@ -435,7 +435,7 @@ var BookSearchComponent = (function () {
     return BookSearchComponent;
     var _a, _b;
 }());
-//# sourceMappingURL=/home/virum/4/DAS/library2/src/book-search.component.js.map
+//# sourceMappingURL=/home/virum/4/DAS/library3/bibliotecadas/src/book-search.component.js.map
 
 /***/ },
 
@@ -490,7 +490,7 @@ var BooksComponent = (function () {
     return BooksComponent;
     var _a, _b;
 }());
-//# sourceMappingURL=/home/virum/4/DAS/library2/src/books.component.js.map
+//# sourceMappingURL=/home/virum/4/DAS/library3/bibliotecadas/src/books.component.js.map
 
 /***/ },
 
@@ -550,7 +550,7 @@ var UserBooksComponent = (function () {
     return UserBooksComponent;
     var _a, _b;
 }());
-//# sourceMappingURL=/home/virum/4/DAS/library2/src/user-books.component.js.map
+//# sourceMappingURL=/home/virum/4/DAS/library3/bibliotecadas/src/user-books.component.js.map
 
 /***/ },
 
@@ -566,7 +566,7 @@ var UserBooksComponent = (function () {
 var environment = {
     production: false
 };
-//# sourceMappingURL=/home/virum/4/DAS/library2/src/environment.js.map
+//# sourceMappingURL=/home/virum/4/DAS/library3/bibliotecadas/src/environment.js.map
 
 /***/ },
 
@@ -622,7 +622,7 @@ var environment = {
 
 
 
-//# sourceMappingURL=/home/virum/4/DAS/library2/src/polyfills.js.map
+//# sourceMappingURL=/home/virum/4/DAS/library3/bibliotecadas/src/polyfills.js.map
 
 /***/ },
 
@@ -636,7 +636,7 @@ module.exports = ""
 /***/ 664:
 /***/ function(module, exports) {
 
-module.exports = ""
+module.exports = "textarea {\n  margin-bottom: 15px;\n}\n\nbutton {\n  margin-bottom: 5px;\n}\n"
 
 /***/ },
 
@@ -650,28 +650,28 @@ module.exports = "#search-box {\n  background-position: 10px 12px; /* Position t
 /***/ 666:
 /***/ function(module, exports) {
 
-module.exports = "li{\n  list-style-type:none;\n}\n\n.selected {\n  border-radius: 5px;\n  border: 2px solid #000000;\n  padding: 10px;\n  background-color: #E2E2E2;\n}\n.books {\n    margin: 0 0 2em 0;\n    list-style-type: none;\n    padding: 0;\n    width: 15em;\n}\n.books li {\n    cursor: pointer;\n    position: relative;\n    left: 0;\n    background-color: #EEE;\n    margin: .5em;\n    padding: .3em 0;\n    height: 1.6em;\n    border-radius: 4px;\n}\n.books li.selected:hover {\n    background-color: #BBD8DC !important;\n    color: white;\n}\n.books li:hover {\n    color: #607D8B;\n    background-color: #DDD;\n    left: .1em;\n}\n.books .text {\n    position: relative;\n    top: -3px;\n}\n.books .badge {\n    display: inline-block;\n    font-size: small;\n    color: white;\n    padding: 0.8em 0.7em 0 0.7em;\n    background-color: #607D8B;\n    line-height: 1em;\n    position: relative;\n    left: -1px;\n    top: -4px;\n    height: 1.8em;\n    margin-right: .8em;\n    border-radius: 4px 0 0 4px;\n}\nbutton.delete {\n    float:right;\n    margin-top: 2px;\n    margin-right: .8em;\n    background-color: gray !important;\n    color:white;\n}\n"
+module.exports = "li{\n  list-style-type:none;\n  padding-left: 15px;\n}\n\n.selected {\n  border-radius: 5px;\n  border: 2px solid #000000;\n  padding: 10px;\n  background-color: #E2E2E2;\n}\n.books {\n    margin: 0 0 2em 0;\n    list-style-type: none;\n    padding: 0;\n    width: 15em;\n}\n.books li {\n    cursor: pointer;\n    position: relative;\n    left: 0;\n    background-color: #EEE;\n    margin: .5em;\n    padding: .3em 0;\n    height: 1.6em;\n    border-radius: 4px;\n}\n.books li.selected:hover {\n    background-color: #BBD8DC !important;\n    color: white;\n}\n.books li:hover {\n    color: #607D8B;\n    background-color: #DDD;\n    left: .1em;\n}\n.books .text {\n    position: relative;\n    top: -3px;\n}\n.books .badge {\n    display: inline-block;\n    font-size: small;\n    color: white;\n    padding: 0.8em 0.7em 0 0.7em;\n    background-color: #607D8B;\n    line-height: 1em;\n    position: relative;\n    left: -1px;\n    top: -4px;\n    height: 1.8em;\n    margin-right: .8em;\n    border-radius: 4px 0 0 4px;\n}\nbutton.delete {\n    float:right;\n    margin-top: 2px;\n    margin-right: .8em;\n    background-color: gray !important;\n    color:white;\n}\n"
 
 /***/ },
 
 /***/ 667:
 /***/ function(module, exports) {
 
-module.exports = "li{\n  list-style-type:none;\n}\n\n.selected {\n  border-radius: 5px;\n  border: 2px solid #000000;\n  padding: 10px;\n  background-color: #E2E2E2;\n}\n\n.books {\n  margin: 0 0 2em 0;\n  list-style-type: none;\n  padding: 0;\n  width: 15em;\n}\n.books li {\n  cursor: pointer;\n  position: relative;\n  left: 0;\n  background-color: #EEE;\n  margin: .5em;\n  padding: .3em 0;\n  height: 1.6em;\n  border-radius: 4px;\n}\n.books li.selected:hover {\n  background-color: #BBD8DC !important;\n  color: white;\n}\n.books li:hover {\n  color: #607D8B;\n  background-color: #DDD;\n  left: .1em;\n}\n.books .text {\n  position: relative;\n  top: -3px;\n}\n.books .badge {\n  display: inline-block;\n  font-size: small;\n  color: white;\n  padding: 0.8em 0.7em 0 0.7em;\n  background-color: #607D8B;\n  line-height: 1em;\n  position: relative;\n  left: -1px;\n  top: -4px;\n  height: 1.8em;\n  margin-right: .8em;\n  border-radius: 4px 0 0 4px;\n}\nbutton.delete {\n  float:right;\n  margin-top: 2px;\n  margin-right: .8em;\n  background-color: gray !important;\n  color:white;\n}\n"
+module.exports = "li{\n  list-style-type:none;\n  padding-left: 15px;\n}\n\n.selected {\n  border-radius: 5px;\n  border: 2px solid #000000;\n  padding: 10px;\n  background-color: #E2E2E2;\n}\n\n.books {\n  margin: 0 0 2em 0;\n  list-style-type: none;\n  padding: 0;\n  width: 15em;\n}\n.books li {\n  cursor: pointer;\n  position: relative;\n  left: 0;\n  background-color: #EEE;\n  margin: .5em;\n  padding: .3em 0;\n  height: 1.6em;\n  border-radius: 4px;\n}\n.books li.selected:hover {\n  background-color: #BBD8DC !important;\n  color: white;\n}\n.books li:hover {\n  color: #607D8B;\n  background-color: #DDD;\n  left: .1em;\n}\n.books .text {\n  position: relative;\n  top: -3px;\n}\n.books .badge {\n  display: inline-block;\n  font-size: small;\n  color: white;\n  padding: 0.8em 0.7em 0 0.7em;\n  background-color: #607D8B;\n  line-height: 1em;\n  position: relative;\n  left: -1px;\n  top: -4px;\n  height: 1.8em;\n  margin-right: .8em;\n  border-radius: 4px 0 0 4px;\n}\nbutton.delete {\n  float:right;\n  margin-top: 2px;\n  margin-right: .8em;\n  background-color: gray !important;\n  color:white;\n}\n"
 
 /***/ },
 
 /***/ 668:
 /***/ function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-default\">\n  <div class=\"container-fluid\">\n    <div class=\"navbar-header\">\n      <a class=\"navbar-brand\" href=\"#\">{{title}}</a>\n    </div>\n    <div>\n      <ul class=\"nav navbar-nav\">\n        <li class=\"active\"><a href=\"/books\">All the books</a></li>\n        <li><a href=\"/user\">User books</a></li>\n        <li><a href=\"/search\">Search</a></li>\n      </ul>\n    </div>\n  </div>\n</nav>\n<router-outlet></router-outlet>\n"
+module.exports = "<nav class=\"navbar navbar-default\">\n  <div class=\"container-fluid\">\n    <div class=\"navbar-header\">\n      <a class=\"navbar-brand\" href=\"/books\">{{title}}</a>\n    </div>\n    <div>\n      <ul class=\"nav navbar-nav\">\n        <li class=\"active\"><a href=\"/books\">All the books</a></li>\n        <li><a href=\"/user\">User books</a></li>\n        <li><a href=\"/search\">Search</a></li>\n      </ul>\n    </div>\n  </div>\n</nav>\n<router-outlet></router-outlet>\n"
 
 /***/ },
 
 /***/ 669:
 /***/ function(module, exports) {
 
-module.exports = "<div class=\"container\">\n<h4>\n  {{book.title}}\n</h4>\n<h5>\n  {{book.author}}\n</h5>\n  <div>\n    <textarea class=\"form-control\" rows=\"5\" [(ngModel)]=\"book.description\" placeholder=\"Description\"></textarea>\n  </div>\n  <button (click)=\"goBack()\" type=\"button\" class=\"btn btn-default\">Go Back</button>\n  <button (click)=\"delete()\" type=\"button\" class=\"btn btn-danger\">Delete</button>\n  <button (click)=\"save()\" id=\"desc\" type=\"button\" class=\"btn btn-warning\">Update description</button>\n  <button (click)=\"addtoUserLibrary()\" type=\"button\" class=\"btn btn-success\">Add to my library</button>\n</div>\n"
+module.exports = "<div class=\"container\">\n<h4>\n  {{book.title}}\n</h4>\n<h5>\n  {{book.author}}\n</h5>\n  <div>\n    <textarea class=\"form-control\" rows=\"5\" [(ngModel)]=\"book.description\" placeholder=\"Description\"></textarea>\n  </div>\n  <button (click)=\"goBack()\" type=\"button\" class=\"btn btn-default\">Go Back</button>\n  <button (click)=\"delete()\" type=\"button\" class=\"btn btn-danger\">Delete</button>\n  <button (click)=\"save()\" id=\"desc\" type=\"button\" class=\"btn btn-warning\">Update description</button>\n  <button (click)=\"addtoUserLibrary()\" type=\"button\" class=\"btn btn-success\">Add to my library</button>\n  <a href=\"{{book.url}}\" role=\"button\" class=\"btn btn-link\">Link</a>\n</div>\n"
 
 /***/ },
 
